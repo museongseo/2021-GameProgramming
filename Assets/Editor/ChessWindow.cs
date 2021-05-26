@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -8,6 +9,8 @@ public class ChessWindow : EditorWindow
 	const int xsize = 6;
 	const int ysize = 4; // Set the size of the board as  6 by 4
 	int[,] Cell; // 1 : Black, 2 : White
+	int cur_i = -1;
+	int cur_j = -1;
 	Texture[] CellTextures;
 	bool blackTurn = true;
 	bool isEnd = false;
@@ -18,7 +21,7 @@ public class ChessWindow : EditorWindow
 	static void Init()
 	{
 		ChessWindow window = GetWindow<ChessWindow>();
-		window.minSize = new Vector2(400, 400);
+		window.minSize = new Vector2(300, 300);
 		window.GameInit();
 	}
 
@@ -60,6 +63,8 @@ public class ChessWindow : EditorWindow
 						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 1)
 						{
 							Cell[i, j] = 0;
+							cur_i = i;
+							cur_j = j;
 							selectPhase = !selectPhase;
 						}
 					}
@@ -68,9 +73,12 @@ public class ChessWindow : EditorWindow
 					{
 						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 0)
 						{
-							Cell[i, j] = 1;
-							selectPhase = !selectPhase;
-							blackTurn = !blackTurn;
+							if ((Math.Abs(cur_i - i) <= 1) && (Math.Abs(cur_j - j) <= 1))
+                            {
+								Cell[i, j] = 1;
+								selectPhase = !selectPhase;
+								blackTurn = !blackTurn;
+							}
 						}
 					}
 				}
@@ -82,6 +90,8 @@ public class ChessWindow : EditorWindow
 						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 2)
 						{
 							Cell[i, j] = 0;
+							cur_i = i;
+							cur_j = j;
 							selectPhase = !selectPhase;
 						}
 					}
@@ -90,9 +100,12 @@ public class ChessWindow : EditorWindow
 					{
 						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 0)
 						{
-							Cell[i, j] = 2;
-							selectPhase = !selectPhase;
-							blackTurn = !blackTurn;
+							if ((Math.Abs(cur_i - i) <= 1) && (Math.Abs(cur_j - j) <= 1))
+							{
+								Cell[i, j] = 2;
+								selectPhase = !selectPhase;
+								blackTurn = !blackTurn;
+							}
 						}
 					}
 				}
@@ -101,7 +114,6 @@ public class ChessWindow : EditorWindow
 			GUILayout.EndHorizontal();
 		}
 	}
-
 
 	Texture GetTexture(int i, int j)
 	{
