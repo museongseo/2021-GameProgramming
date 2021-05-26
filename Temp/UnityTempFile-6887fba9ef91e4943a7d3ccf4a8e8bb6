@@ -1,9 +1,9 @@
 Search Paths:5
 C:\Program Files\2020.3.8f1\Editor\Data\Managed
 C:\Program Files\2020.3.8f1\Editor\Data\Managed/UnityEngine
-C:/Users/Seo Museong/Desktop/게임프로그래밍/SkillChess/Assets
-C:/Users/Seo Museong/Desktop/게임프로그래밍/SkillChess/Assets\../Library/ScriptAssemblies/
-C:\Users\Seo Museong\Desktop\게임프로그래밍\SkillChess\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom
+C:/Users/Seo Museong/Documents/GitHub/SkillChess/Assets
+C:/Users/Seo Museong/Documents/GitHub/SkillChess/Assets\../Library/ScriptAssemblies/
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom
 C:\Program Files\2020.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll:32
 UnityEditor.Sysroot
 UnityEditor.MPE.ChannelClient
@@ -104,3 +104,13 @@ UnityEngine.AI.OffMeshLink
 UnityEngine.AI.NavMeshHit
 UnityEngine.AI.NavMeshTriangulation
 UnityEngine.AI.NavMesh
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll:0
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\Unity.Rider.Editor.dll:0
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\Unity.TextMeshPro.dll:0
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll:0
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\Unity.Timeline.dll:0
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\Unity.Timeline.Editor.dll:0
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll:0
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\Unity.VSCode.Editor.dll:0
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\UnityEditor.UI.dll:0
+C:\Users\Seo Museong\Documents\GitHub\SkillChess\Library\ScriptAssemblies\UnityEngine.UI.dll:0

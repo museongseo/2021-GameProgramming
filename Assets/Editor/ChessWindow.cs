@@ -11,7 +11,7 @@ public class ChessWindow : EditorWindow
 	Texture[] CellTextures;
 	bool blackTurn = true;
 	bool isEnd = false;
-	int selectPhase = false;
+	bool selectPhase = true;
 
 
 	[MenuItem("Examples/SkillChess")]
@@ -60,16 +60,16 @@ public class ChessWindow : EditorWindow
 						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 1)
 						{
 							Cell[i, j] = 0;
-							selectPhase != selectPhase;
+							selectPhase = !selectPhase;
 						}
 					}
 
-					if (selectPhase)
+					else
 					{
 						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 0)
 						{
 							Cell[i, j] = 1;
-							selectPhase != selectPhase;
+							selectPhase = !selectPhase;
 							blackTurn = !blackTurn;
 						}
 					}
@@ -77,21 +77,21 @@ public class ChessWindow : EditorWindow
 
 				else
 				{
-					if (phase == 1)
+					if (selectPhase)
 					{
 						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 2)
 						{
 							Cell[i, j] = 0;
-							selectPhase != selectPhase;
+							selectPhase = !selectPhase;
 						}
 					}
 
-					if (phase == 2)
+					else
 					{
 						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 0)
 						{
 							Cell[i, j] = 2;
-							selectPhase != selectPhase;
+							selectPhase = !selectPhase;
 							blackTurn = !blackTurn;
 						}
 					}

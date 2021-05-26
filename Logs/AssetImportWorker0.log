@@ -11,19 +11,19 @@ C:\Program Files\2020.3.8f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Seo Museong/Desktop/게임프로그래밍/SkillChess
+C:/Users/Seo Museong/Documents/GitHub/SkillChess
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-7829
-Successfully changed project path to: C:/Users/Seo Museong/Desktop/게임프로그래밍/SkillChess
-C:/Users/Seo Museong/Desktop/게임프로그래밍/SkillChess
+2335
+Successfully changed project path to: C:/Users/Seo Museong/Documents/GitHub/SkillChess
+C:/Users/Seo Museong/Documents/GitHub/SkillChess
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 29.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 26.95 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path C:/Program Files/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Seo Museong/Desktop/게임프로그래밍/SkillChess/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Seo Museong/Documents/GitHub/SkillChess/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,86 +35,102 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002756 seconds.
+Registered in 0.002298 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 34.23 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 22.13 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.370 seconds
+- Completed reload, in  1.012 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001168 seconds.
+Registered in 0.000598 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.258 seconds
+- Completed reload, in  0.740 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1116 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 57.1 MB.
 System memory in use after: 57.1 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1558.
-Total: 2.067900 ms (FindLiveObjects: 0.186100 ms CreateObjectMapping: 0.041300 ms MarkObjects: 1.751100 ms  DeleteObjects: 0.088100 ms)
+Total: 1.890700 ms (FindLiveObjects: 0.192600 ms CreateObjectMapping: 0.045200 ms MarkObjects: 1.562100 ms  DeleteObjects: 0.090000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes
-  artifactKey: Guid(3641a3dfb516f6d43a5381c9c595df5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(3641a3dfb516f6d43a5381c9c595df5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a943b531c50e400a5f97d50366624a') in 0.016913 seconds
-  Import took 0.020727 seconds .
+  path: Assets/Editor/ChessWindow.cs
+  artifactKey: Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/ChessWindow.cs using Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d303258cf222da2275719c85fdb159') in 0.030791 seconds
+  Import took 0.032411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.569481 seconds.
+  path: Assets/Editor/ChessWindow.cs
+  artifactKey: Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/ChessWindow.cs using Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae6e55a7f5c61d4a368d018a3262160') in 0.002727 seconds
+  Import took 0.004914 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020608 seconds.
+  path: Assets/Editor/ChessWindow.cs
+  artifactKey: Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/ChessWindow.cs using Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae6e55a7f5c61d4a368d018a3262160') in 0.003571 seconds
+  Import took 0.006433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.003175 seconds.
+  path: Assets/Editor/ChessWindow.cs
+  artifactKey: Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/ChessWindow.cs using Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a20f804f6e8b1f41a84fdb5d3f5dba') in 0.010736 seconds
+  Import took 0.013193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001835 seconds.
+  path: Assets/Editor/ChessWindow.cs
+  artifactKey: Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/ChessWindow.cs using Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a20f804f6e8b1f41a84fdb5d3f5dba') in 0.002792 seconds
+  Import took 0.004935 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000788 seconds.
+Registered in 0.000663 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.916 seconds
+- Completed reload, in  0.743 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1111 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 57.0 MB.
 System memory in use after: 57.1 MB.
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1561.
-Total: 2.126700 ms (FindLiveObjects: 0.167000 ms CreateObjectMapping: 0.030800 ms MarkObjects: 1.878500 ms  DeleteObjects: 0.049200 ms)
+Total: 1.601400 ms (FindLiveObjects: 0.113100 ms CreateObjectMapping: 0.027300 ms MarkObjects: 1.393600 ms  DeleteObjects: 0.066700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 212.192185 seconds.
+  Time since last request: 44.658434 seconds.
   path: Assets/Editor/ChessWindow.cs
   artifactKey: Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/ChessWindow.cs using Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b02fc241665de62ce85070f66810ea') in 0.030497 seconds
-  Import took 0.032465 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 146.247521 seconds.
-  path: Assets/Editor/ChessWindow.cs
-  artifactKey: Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/ChessWindow.cs using Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75be6df74b4cb399642d6601b724d794') in 0.003721 seconds
-  Import took 0.007390 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 70.496182 seconds.
-  path: Assets/Editor/ChessWindow.cs
-  artifactKey: Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/ChessWindow.cs using Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba891c43e1dcd8761f5f9fff36ef851') in 0.012233 seconds
-  Import took 0.014954 seconds .
+Start importing Assets/Editor/ChessWindow.cs using Guid(0c0c8e6161508514cb8de1b0ff16ab77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e2c8c62186ff1fd608d6cab36c1ed6') in 0.007469 seconds
+  Import took 0.009075 seconds .
 

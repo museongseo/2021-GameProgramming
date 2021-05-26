@@ -9,9 +9,20 @@
 /nostdlib+
 /preferreduilang:en-US
 /langversion:8.0
+/reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
 /reference:"C:/Program Files/2020.3.8f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 /reference:"C:/Program Files/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
-/reference:"C:/Users/Seo Museong/Desktop/게임프로그래밍/SkillChess/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+/reference:"C:/Users/Seo Museong/Documents/GitHub/SkillChess/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 /reference:"C:/Program Files/2020.3.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 /reference:"C:/Program Files/2020.3.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll"
 /reference:"C:/Program Files/2020.3.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll"
@@ -201,17 +212,6 @@
 /reference:"C:/Program Files/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll"
 /reference:"C:/Program Files/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll"
 /reference:"C:/Program Files/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll"
-/reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.dll
-/reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
-/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
 /define:CSHARP_7_3_OR_NEWER
 /define:CSHARP_7_OR_LATER
 /define:DEBUG
