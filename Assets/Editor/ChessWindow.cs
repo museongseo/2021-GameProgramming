@@ -81,8 +81,15 @@ public class ChessWindow : EditorWindow
 								}
 								else // If there is another piece in the cell to move
 								{
-									Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
-									Cell[i, j] = 1;
+									if ((2 * i - cur_i > 5) || (2 * i - cur_i < 0) || (2 * j - cur_j > 3) || (2 * j - cur_j < 0))
+                                    {
+										Cell[i, j] = 1;
+                                    }
+                                    else
+                                    {
+										Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+										Cell[i, j] = 1;
+									}
 								}
 								selectPhase = !selectPhase;
 								blackTurn = !blackTurn;
@@ -116,8 +123,15 @@ public class ChessWindow : EditorWindow
 								}
 								else // If there is another piece in the cell to move
 								{
-									Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
-									Cell[i, j] = 2;
+									if ((2 * i - cur_i > 5) || (2 * i - cur_i < 0) || (2 * j - cur_j > 3) || (2 * j - cur_j < 0))
+									{
+										Cell[i, j] = 2;
+									}
+									else
+									{
+										Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+										Cell[i, j] = 2;
+									}
 								}
 								selectPhase = !selectPhase;
 								blackTurn = !blackTurn;
