@@ -56,9 +56,9 @@ public class ChessWindow : EditorWindow
 			GUILayout.BeginHorizontal();
 			for (int j = 0; j < ysize; j++)
 			{
-				if (blackTurn)
+				if (blackTurn) // Black Player's Turn
 				{
-					if (selectPhase)
+					if (selectPhase) // If the player has not chosen which piece to move, select the piece to move
 					{
 						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 1)
 						{
@@ -69,13 +69,21 @@ public class ChessWindow : EditorWindow
 						}
 					}
 
-					else
+					else // Once you have selected which piece to move, move it only in the adjacent cell
 					{
-						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 0)
+						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)))
 						{
 							if ((Math.Abs(cur_i - i) <= 1) && (Math.Abs(cur_j - j) <= 1))
                             {
-								Cell[i, j] = 1;
+								if (Cell[i, j] == 0) // If there is no other piece in the cell to move
+								{
+									Cell[i, j] = 1;
+								}
+								else // If there is another piece in the cell to move
+								{
+									Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+									Cell[i, j] = 1;
+								}
 								selectPhase = !selectPhase;
 								blackTurn = !blackTurn;
 							}
@@ -83,7 +91,7 @@ public class ChessWindow : EditorWindow
 					}
 				}
 
-				else
+				else // White Player's Turn
 				{
 					if (selectPhase)
 					{
@@ -98,11 +106,19 @@ public class ChessWindow : EditorWindow
 
 					else
 					{
-						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)) && Cell[i, j] == 0)
+						if (GUILayout.Button(GetTexture(i, j), GUILayout.Width(60), GUILayout.Height(60)))
 						{
 							if ((Math.Abs(cur_i - i) <= 1) && (Math.Abs(cur_j - j) <= 1))
 							{
-								Cell[i, j] = 2;
+								if (Cell[i, j] == 0) // If there is no other piece in the cell to move
+								{
+									Cell[i, j] = 2;
+								}
+								else // If there is another piece in the cell to move
+								{
+									Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+									Cell[i, j] = 2;
+								}
 								selectPhase = !selectPhase;
 								blackTurn = !blackTurn;
 							}
