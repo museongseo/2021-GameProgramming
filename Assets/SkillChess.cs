@@ -45,8 +45,8 @@ public class SkillChess : MonoBehaviourPunCallbacks
         CellTextures = new Texture[2] { Resources.Load<Texture>("R_Black"), Resources.Load<Texture>("R_White") };
         for (int i = 0; i < 4; i++)
         {
-            Cell[0, i] = 1;
-            Cell[5, i] = 2;
+            Cell[5, i] = 1;
+            Cell[0, i] = 2; // Black : 1, White : 2
         }
         start = true;
         if (PhotonNetwork.IsMasterClient == true)
@@ -64,7 +64,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
             if (isEnd)
             {
                 GUI.enabled = false;
-                DebugText.text = blackTurn ? "Black Wins" : "White Wins";
+                DebugText.text = blackTurn ? "White Wins" : "Black Wins";
             }
             else
             {
@@ -114,6 +114,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                     }
                                     selectPhase = !selectPhase;
                                     blackTurn = !blackTurn;
+                                    isCheckmate();
                                 }
                             }
                         }
@@ -154,8 +155,9 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                             Cell[i, j] = 2;
                                         }
                                     }
-                                    selectPhase = !selectPhase;
+                                    selectPhase = !selectPhase; 
                                     blackTurn = !blackTurn;
+                                    isCheckmate();
                                 }
                             }
                         }
@@ -167,11 +169,26 @@ public class SkillChess : MonoBehaviourPunCallbacks
         }
     }
 
-
     Texture GetTexture(int i, int j)
     {
         if (Cell[i, j] == 1) return CellTextures[0];
         else if (Cell[i, j] == 2) return CellTextures[1];
         return null;
+    }
+
+    void isCheckmate()
+    {
+        int blackCount = 0;
+        int whiteCount = 0;
+        for (int i = 0; i < isize; i++)
+        {
+            for (int j = 0; j < jsize; j++)
+            {
+                if (Cell[i, j] == 1) blackCount += 1;
+                else if (Cell[i, j] == 2) whiteCount += 1;
+            }
+        }
+        if ((blackCount == 0) || (whiteCount == 0)) isEnd = true;
+        else return;
     }
 }
