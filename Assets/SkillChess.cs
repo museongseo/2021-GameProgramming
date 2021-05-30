@@ -108,8 +108,25 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                         }
                                         else
                                         {
-                                            Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
-                                            Cell[i, j] = 1;
+                                            if (Cell[2 * i - cur_i, 2 * j - cur_j] == 0)
+                                            {
+                                                Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                Cell[i, j] = 1;
+                                            }
+                                            else
+                                            {
+                                                if ((3 * i - 2 * cur_i > 5) || (3 * i - 2 * cur_i < 0) || (3 * j - 2 * cur_j > 3) || (3 * j - 2 * cur_j < 0))
+                                                {
+                                                    Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                    Cell[i, j] = 1;
+                                                }
+                                                else
+                                                {
+                                                    Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
+                                                    Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                    Cell[i, j] = 1;
+                                                }
+                                            }
                                         }
                                     }
                                     selectPhase = !selectPhase;
@@ -149,13 +166,27 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                         {
                                             Cell[i, j] = 2;
                                         }
-                                        else
+                                        if (Cell[2 * i - cur_i, 2 * j - cur_j] == 0)
                                         {
                                             Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
                                             Cell[i, j] = 2;
                                         }
+                                        else
+                                        {
+                                            if ((3 * i - 2 * cur_i > 5) || (3 * i - 2 * cur_i < 0) || (3 * j - 2 * cur_j > 3) || (3 * j - 2 * cur_j < 0))
+                                            {
+                                                Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                Cell[i, j] = 2;
+                                            }
+                                            else
+                                            {
+                                                Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
+                                                Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                Cell[i, j] = 2;
+                                            }
+                                        }
                                     }
-                                    selectPhase = !selectPhase; 
+                                    selectPhase = !selectPhase;
                                     blackTurn = !blackTurn;
                                     isCheckmate();
                                 }
