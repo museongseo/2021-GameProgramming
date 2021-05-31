@@ -130,10 +130,33 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                                     }
                                                     else
                                                     {
-                                                        Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j] = Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j];
-                                                        Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
-                                                        Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
-                                                        Cell[i, j] = 1;
+                                                        if ((5 * i - 4 * cur_i > 5) || (5 * i - 4 * cur_i < 0) || (5 * j - 4 * cur_j > 3) || (5 * j - 4 * cur_j < 0))
+                                                        {
+                                                            Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j] = Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j];
+                                                            Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
+                                                            Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                            Cell[i, j] = 1;
+                                                        }
+                                                        else
+                                                        {
+                                                            if ((6 * i - 5 * cur_i > 5) || (6 * i - 5 * cur_i < 0) || (6 * j - 5 * cur_j > 3) || (6 * j - 5 * cur_j < 0))
+                                                            {
+                                                                Cell[5 * i - 4 * cur_i, 5 * j - 4 * cur_j] = Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j];
+                                                                Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j] = Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j];
+                                                                Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
+                                                                Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                                Cell[i, j] = 1;
+                                                            }
+                                                            else
+                                                            {
+                                                                Cell[6 * i - 5 * cur_i, 6 * j - 5 * cur_j] = Cell[5 * i - 4 * cur_i, 5 * j - 4 * cur_j];
+                                                                Cell[5 * i - 4 * cur_i, 5 * j - 4 * cur_j] = Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j];
+                                                                Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j] = Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j];
+                                                                Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
+                                                                Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                                Cell[i, j] = 1;
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
@@ -200,10 +223,33 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                                     }
                                                     else
                                                     {
-                                                        Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j] = Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j];
-                                                        Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
-                                                        Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
-                                                        Cell[i, j] = 2;
+                                                        if ((5 * i - 4 * cur_i > 5) || (5 * i - 4 * cur_i < 0) || (5 * j - 4 * cur_j > 3) || (5 * j - 4 * cur_j < 0))
+                                                        {
+                                                            Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j] = Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j];
+                                                            Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
+                                                            Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                            Cell[i, j] = 2;
+                                                        }
+                                                        else
+                                                        {
+                                                            if ((6 * i - 5 * cur_i > 5) || (6 * i - 5 * cur_i < 0) || (6 * j - 5 * cur_j > 3) || (6 * j - 5 * cur_j < 0))
+                                                            {
+                                                                Cell[5 * i - 4 * cur_i, 5 * j - 4 * cur_j] = Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j];
+                                                                Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j] = Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j];
+                                                                Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
+                                                                Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                                Cell[i, j] = 2;
+                                                            }
+                                                            else
+                                                            {
+                                                                Cell[6 * i - 5 * cur_i, 6 * j - 5 * cur_j] = Cell[5 * i - 4 * cur_i, 5 * j - 4 * cur_j];
+                                                                Cell[5 * i - 4 * cur_i, 5 * j - 4 * cur_j] = Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j];
+                                                                Cell[4 * i - 3 * cur_i, 4 * j - 3 * cur_j] = Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j];
+                                                                Cell[3 * i - 2 * cur_i, 3 * j - 2 * cur_j] = Cell[2 * i - cur_i, 2 * j - cur_j];
+                                                                Cell[2 * i - cur_i, 2 * j - cur_j] = Cell[i, j];
+                                                                Cell[i, j] = 2;
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
