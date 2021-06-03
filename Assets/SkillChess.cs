@@ -9,6 +9,10 @@ using UnityEngine.UI;
 
 public class SkillChess : MonoBehaviourPunCallbacks
 {
+    public AudioClip Victory;
+    public AudioClip Piece;
+    AudioSource audioSource;
+
     const int isize = 6, jsize = 4;
     int[,] Cell;
     int cur_i, cur_j;
@@ -26,6 +30,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
         PhotonNetwork.SendRate = 60;
         PhotonNetwork.SerializationRate = 30;
         Connect();
+        this.audioSource = GetComponent<AudioSource>();
 
     }
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
@@ -63,6 +68,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
         {
             if (isEnd)
             {
+                PlaySound("Victory");
                 GUI.enabled = false;
                 DebugText.text = blackTurn ? "White Wins" : "Black Wins";
             }
@@ -187,6 +193,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                             }
                                         }
                                     }
+                                    PlaySound("Piece");
                                     selectPhase = !selectPhase;
                                     blackTurn = !blackTurn;
                                     isCheckmate();
@@ -305,6 +312,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                             }
                                         }
                                     }
+                                    PlaySound("Piece");
                                     selectPhase = !selectPhase;
                                     blackTurn = !blackTurn;
                                     isCheckmate();
@@ -339,5 +347,18 @@ public class SkillChess : MonoBehaviourPunCallbacks
         }
         if ((blackCount == 0) || (whiteCount == 0)) isEnd = true;
         else return;
+    }
+
+    void PlaySound(String action)
+    {
+        switch (action)
+        {
+            case "Victory":
+                audioSource.clip = Victory;
+                break;
+            case "Piece":
+                audioSource.clip = Piece;
+                break;
+        }
     }
 }

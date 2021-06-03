@@ -15,11 +15,11 @@ C:/Users/Seo Museong/Documents/GitHub/SkillChess
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-6033
+9237
 Successfully changed project path to: C:/Users/Seo Museong/Documents/GitHub/SkillChess
 C:/Users/Seo Museong/Documents/GitHub/SkillChess
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.79 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 77.90 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path C:/Program Files/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -35,63 +35,231 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002590 seconds.
+Registered in 0.002582 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 70.28 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 55.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.482 seconds
+- Completed reload, in  1.415 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003854 seconds.
+Registered in 0.003226 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 52.72 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 59.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.245 seconds
+- Completed reload, in  1.244 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2031 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.2 MB.
+System memory in use before: 92.3 MB.
 System memory in use after: 92.2 MB.
 
 Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2469.
-Total: 2.620000 ms (FindLiveObjects: 0.262500 ms CreateObjectMapping: 0.121900 ms MarkObjects: 2.105300 ms  DeleteObjects: 0.129100 ms)
+Total: 2.457800 ms (FindLiveObjects: 0.222400 ms CreateObjectMapping: 0.100800 ms MarkObjects: 1.995700 ms  DeleteObjects: 0.137300 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset
   artifactKey: Guid(cf20953b1dc17ee4ba2662518c8d8ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset using Guid(cf20953b1dc17ee4ba2662518c8d8ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dbc745b1e550aeef3879f31b77ebcda') in 0.055557 seconds
-  Import took 0.060104 seconds .
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset using Guid(cf20953b1dc17ee4ba2662518c8d8ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f752e3685c0aa0a49ebeb27aca6b3164') in 0.048104 seconds
+  Import took 0.051517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.743113 seconds.
+  path: Assets/Resources/R_Black.png
+  artifactKey: Guid(3f84aec1e9d69974c829bd48a9a0848d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/R_Black.png using Guid(3f84aec1e9d69974c829bd48a9a0848d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8e0a81e5d8ef48645c7e9405b3f2e3') in 0.111742 seconds
+  Import took 0.115147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Resources/R_White.png
+  artifactKey: Guid(45ccbb14dcc809c4e96f94e176fb4732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/R_White.png using Guid(45ccbb14dcc809c4e96f94e176fb4732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e557153a4c9e3a3920eb113bf546c1') in 0.030918 seconds
+  Import took 0.034931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.104698 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(1cf13327b8b2f0e46bb36079220d6ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(1cf13327b8b2f0e46bb36079220d6ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5886741671583b5a214a7fe771f7a5d') in 0.005879 seconds
+  Import took 0.009318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007585 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(1cf13327b8b2f0e46bb36079220d6ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(1cf13327b8b2f0e46bb36079220d6ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5886741671583b5a214a7fe771f7a5d') in 0.002226 seconds
+  Import took 0.005769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.235570 seconds.
+  path: Assets/Resources/Victory.mp3
+  artifactKey: Guid(de71ce0059dbecd4b89ab3877cefee39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Victory.mp3 using Guid(de71ce0059dbecd4b89ab3877cefee39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '683654b78b7fd79a8a653c0f9ba0d089') in 0.043024 seconds
+  Import took 0.046496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.433980 seconds.
+  path: Assets/Resources/Piece 1.mp3
+  artifactKey: Guid(67e460e48c73ffc4a9fd4b523fdecf26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Piece 1.mp3 using Guid(67e460e48c73ffc4a9fd4b523fdecf26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56df29f6067e3437e85f4776658989ef') in 0.017049 seconds
+  Import took 0.020274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Resources/Piece.mp3
+  artifactKey: Guid(438e3d1919022b54a8fd4323ca7866ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Piece.mp3 using Guid(438e3d1919022b54a8fd4323ca7866ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70de29a9e7cdba992d0ed8ad23c6b31e') in 0.015598 seconds
+  Import took 0.018483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 153.248642 seconds.
+  path: Assets/SkillChess.cs
+  artifactKey: Guid(f2ae43c0c02820e42a1b779216e25ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillChess.cs using Guid(f2ae43c0c02820e42a1b779216e25ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3317e1d89ef958935e62fea07aa5bab5') in 0.011592 seconds
+  Import took 0.015819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002777 seconds.
+  path: Assets/SkillChess.cs
+  artifactKey: Guid(f2ae43c0c02820e42a1b779216e25ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillChess.cs using Guid(f2ae43c0c02820e42a1b779216e25ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3317e1d89ef958935e62fea07aa5bab5') in 0.003054 seconds
+  Import took 0.006794 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002988 seconds.
+Registered in 0.002578 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.836 seconds
+- Completed reload, in  0.862 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2025 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.1 MB.
+System memory in use before: 95.2 MB.
+System memory in use after: 95.1 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2474.
-Total: 2.307900 ms (FindLiveObjects: 0.215600 ms CreateObjectMapping: 0.064300 ms MarkObjects: 1.921600 ms  DeleteObjects: 0.105500 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2486.
+Total: 2.592100 ms (FindLiveObjects: 0.227300 ms CreateObjectMapping: 0.086100 ms MarkObjects: 2.164100 ms  DeleteObjects: 0.113400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.691121 seconds.
+  path: Assets/SkillChess.cs
+  artifactKey: Guid(f2ae43c0c02820e42a1b779216e25ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillChess.cs using Guid(f2ae43c0c02820e42a1b779216e25ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207ce8d4257283dbfb35f02b636869ee') in 0.004775 seconds
+  Import took 0.009821 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002801 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.831 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2025 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.2 MB.
+System memory in use after: 95.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2491.
+Total: 2.060000 ms (FindLiveObjects: 0.189300 ms CreateObjectMapping: 0.090600 ms MarkObjects: 1.686500 ms  DeleteObjects: 0.092700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002691 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.848 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2025 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.2 MB.
+System memory in use after: 95.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2496.
+Total: 3.070500 ms (FindLiveObjects: 0.231600 ms CreateObjectMapping: 0.097400 ms MarkObjects: 2.632600 ms  DeleteObjects: 0.107400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 336.140659 seconds.
+  path: Assets/SkillChess.cs
+  artifactKey: Guid(f2ae43c0c02820e42a1b779216e25ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkillChess.cs using Guid(f2ae43c0c02820e42a1b779216e25ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da62e0fb4368ba717315b1a5e903f9c') in 0.007360 seconds
+  Import took 0.010836 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003923 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.345 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2025 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.2 MB.
+System memory in use after: 95.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2501.
+Total: 3.299100 ms (FindLiveObjects: 0.402500 ms CreateObjectMapping: 0.137400 ms MarkObjects: 2.619100 ms  DeleteObjects: 0.137200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004979 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.352 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2025 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.2 MB.
+System memory in use after: 95.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2506.
+Total: 2.954300 ms (FindLiveObjects: 0.240300 ms CreateObjectMapping: 0.152300 ms MarkObjects: 2.425200 ms  DeleteObjects: 0.134700 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
