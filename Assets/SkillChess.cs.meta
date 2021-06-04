@@ -3,7 +3,10 @@ guid: f2ae43c0c02820e42a1b779216e25ecc
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Victory: {fileID: 8300000, guid: de71ce0059dbecd4b89ab3877cefee39, type: 3}
+  - Piece: {fileID: 8300000, guid: 438e3d1919022b54a8fd4323ca7866ac, type: 3}
+  - DebugText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

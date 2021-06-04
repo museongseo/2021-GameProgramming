@@ -9,9 +9,7 @@ using UnityEngine.UI;
 
 public class SkillChess : MonoBehaviourPunCallbacks
 {
-    public AudioClip Victory;
-    public AudioClip Piece;
-    AudioSource audioSource;
+    private AudioSource audioSource;
 
     const int isize = 6, jsize = 4;
     int[,] Cell;
@@ -19,9 +17,9 @@ public class SkillChess : MonoBehaviourPunCallbacks
     Texture[] CellTextures;
     bool blackTurn = false, isEnd = false, start = false, selectPhase = true;
     [SerializeField] private Text DebugText;
+    [SerializeField] private AudioClip Victory;
+    [SerializeField] private AudioClip Piece;
     private PhotonView PV;
-
-
 
 
     private void Awake()
@@ -30,8 +28,6 @@ public class SkillChess : MonoBehaviourPunCallbacks
         PhotonNetwork.SendRate = 60;
         PhotonNetwork.SerializationRate = 30;
         Connect();
-        this.audioSource = GetComponent<AudioSource>();
-
     }
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
 
@@ -46,6 +42,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
     }
     void GameInit()
     {
+        audioSource = GetComponent<AudioSource>();
         Cell = new int[isize, jsize];
         CellTextures = new Texture[2] { Resources.Load<Texture>("R_Black"), Resources.Load<Texture>("R_White") };
         for (int i = 0; i < 4; i++)
@@ -68,7 +65,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
         {
             if (isEnd)
             {
-                PlaySound("Victory");
+                //PlaySound("Victory");
                 GUI.enabled = false;
                 DebugText.text = blackTurn ? "White Wins" : "Black Wins";
             }
@@ -193,7 +190,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                             }
                                         }
                                     }
-                                    PlaySound("Piece");
+                                    //PlaySound("Piece");
                                     selectPhase = !selectPhase;
                                     blackTurn = !blackTurn;
                                     isCheckmate();
@@ -312,7 +309,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
                                             }
                                         }
                                     }
-                                    PlaySound("Piece");
+                                    //PlaySound("Piece");
                                     selectPhase = !selectPhase;
                                     blackTurn = !blackTurn;
                                     isCheckmate();

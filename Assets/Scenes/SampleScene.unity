@@ -303,9 +303,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2ae43c0c02820e42a1b779216e25ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DebugText: {fileID: 2131782769}
   Victory: {fileID: 8300000, guid: de71ce0059dbecd4b89ab3877cefee39, type: 3}
   Piece: {fileID: 8300000, guid: 438e3d1919022b54a8fd4323ca7866ac, type: 3}
-  DebugText: {fileID: 2131782769}
 --- !u!4 &1374946422
 Transform:
   m_ObjectHideFlags: 0
@@ -352,15 +352,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: de71ce0059dbecd4b89ab3877cefee39, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 06d8d31ad2fe9e3498f495532c1f328c, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
