@@ -64,7 +64,7 @@ public class SkillChess : MonoBehaviourPunCallbacks
         {
             if (isEnd)
             {
-                //PlaySound("Victory");
+                PlaySound("Victory");
                 GUI.enabled = false;
                 DebugText.text = blackTurn ? "White Wins" : "Black Wins";
             }
